@@ -40,6 +40,7 @@ public class Ejercicio7 {
 				horas = 0;
 			}
 			
+			//Mostramos las horas los minutos y los segundos en el formato adecuado
 			System.out.printf("%d:%d.%d", horas, min, seg);
 		}
 
