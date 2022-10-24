@@ -6,6 +6,15 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 
+		/*Introduzco 16378 y me devuelve que el numero no es valido
+		 *Introduzco 5 y me devuelve que el numero es capicua
+		 *Introduzco 19 y me devuelve que el numero no es capicua
+		 *Introduzco 77 y me devuelve que el numero es capicua
+		 *Introduzco 410 y me devuelve que el numero no es capicua
+		 *Introduzco 929 y me devuelve que el numero es capicua
+		 *Introduzco 8451 y me devuelve que el numero no es capicua
+		 *Introduzco 3003 y me devuelve que el numero es capicua*/
+		
 		// Declaramos las variables
 		int num, milesima, centesima, decima, unidad;
 

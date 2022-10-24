@@ -6,6 +6,11 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 
+		/*Introduzco 15370 y me devuelve que le numero no es valido
+		 *Introduzco 48190440 y me devuelve N
+		 *Introduzco 53962931 y me devuelve D
+		 *Introduzco 77824064 y me devuelve E*/
+		
 		// Declaramos la variables
 		int numDni, resto;
 		char letraDni = ' ';
