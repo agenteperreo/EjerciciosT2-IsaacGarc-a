@@ -6,7 +6,8 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 
-		/*num=16378 --> "el numero no es valido"
+		/*PRUEBAS
+		 *num=16378 --> "el numero no es valido"
 		 *num=5 --> "el numero es capicua"
 		 *num=19 --> "el numero no es capicua"
 		 *num=77 --> "el numero es capicua"
@@ -14,7 +15,7 @@ public class Ejercicio1 {
 		 *num=929 --> "el numero es capicua"
 		 *num=8451 --> "el numero no es capicua"
 		 *num=3003 --> "el numero es capicua"
-		 */
+		*/
 		
 		// Declaramos las variables
 		int num, milesima, centesima, decima, unidad;

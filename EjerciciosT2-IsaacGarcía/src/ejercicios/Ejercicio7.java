@@ -5,9 +5,17 @@ import java.util.Scanner;
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
-
+		
+		/*PRUEBAS
+		 *horas=14, min=69, seg=20 --> "No valido
+		 *horas=23, min=59, seg=59 --> "0:0.0"
+		 *horas=6, min=46, seg=59  --> "6:47.0"
+		 *horas=19, min=59, seg=59 --> "20:0.0"
+		 *horas=10, min=23, seg=39 --> "10:23.40"
+		*/
+		
 		// Declaramos la variables
-		int horas, min, seg;
+		int horas, min, seg; //Horas, minutos y segundos
 
 		// Abrimos el escaner
 		Scanner sc = new Scanner(System.in);

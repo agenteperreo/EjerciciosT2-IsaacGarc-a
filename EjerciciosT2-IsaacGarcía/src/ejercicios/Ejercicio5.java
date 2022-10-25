@@ -6,7 +6,8 @@ public class Ejercicio5 {
 
 	public static void main(String[] args) {
 		
-		/*num=-7 --> 7
+		/*PRUEBAS
+		 * num=-7 --> 7
 		 *num=3 --> 3
 		*/
 		

@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class Ejercicio8 {
 
 	public static void main(String[] args) {
+		
+		/*PUEBAS
+		 *distancia=750, estancia=5 --> "El total del viaje es 1875,00€
+		 *distancia=1150, estancia=9 --> "Ya que la distancia del viaje es mayor a 800km y la estancia mayor a 7 dias, se le ha hecho un 30% de descuento. El total de su viaje es: 2012.5€"
+		*/
 
 		// Declaramos las variables
 		int distancia, estancia;
@@ -28,11 +33,11 @@ public class Ejercicio8 {
 			descuento = total * 0.3; //calculamos un 30% de descuento respecto al total
 			total -= descuento; //Le restamos el descuento al total
 			System.out.println(
-					"Ya que la distancia del viaje es mayor a 800km y la estancia mayor a 7 dias, se le ha hecho un 30% de descuento.\n El total de su viaje es: "
-							+ total);
+					"Ya que la distancia del viaje es mayor a 800km y la estancia mayor a 7 dias, se le ha hecho un 30% de descuento.\nEl total de su viaje es: "
+							+ total+"€");
 			//Mostramos que se ha descuentado un 30% y mostramos el total del viaje
 		} else { //Si no, el precio total no cambiaria
-			System.out.printf("El total del viaje es: %.2f", total); //Lo mostramos
+			System.out.printf("El total del viaje es: %.2f€", total); //Lo mostramos
 		}
 
 		// Cerramos el escaner

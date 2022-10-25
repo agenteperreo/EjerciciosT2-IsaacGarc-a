@@ -6,10 +6,13 @@ public class Ejercicio2 {
 
 	public static void main(String[] args) {
 
-		/*numDni=15370 --> "El numero no es valido"
+		/*PRUEBAS
+		 *numDni=15370 --> "El numero no es valido"
 		 *numDni=48190440 --> N
 		 *numDni=53962931 --> D
-		 *numDni=77824064 --> E*/
+		 *numDni=77824064 --> E
+		*/
+		
 		// Declaramos la variables
 		int numDni, resto;
 		char letraDni = ' ';

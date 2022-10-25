@@ -6,7 +6,8 @@ public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		
-		/*kilosComprados=300, numA=0, kilosDiarios=150 --> "El numero de animales es incorrecto"
+		/*PRUEBAS
+		 *kilosComprados=300, numA=0, kilosDiarios=150 --> "El numero de animales es incorrecto"
 		 *kilsoComprados=300, numA=2, kilosDiarios=250 --> "Tienes suficiente comida para los animales"
 		 *kilosComprados=250, numA=3, kilosDiarios=300 --> "No tienes suficiente comida para los animales"
 		 *												   "A cada animal le corresponderia 83,33kg de comida"*/
@@ -36,8 +37,8 @@ public class Ejercicio3 {
 			if (kilosComprados>=kilosDiarios) { //Si los kg de comida comprados es mayor o igual a los kilos que consumen los animales
 				System.out.println("Tienes suficiente comida para los animales"); //Mostramos que tienen suficiente comida
 			} else { //Si el numero de kilos comprados es menor al de los kilos que consumen los animales
-				System.out.println("No tienes suficiente comida para los animales"); //Mostramos que no es suficiente comida para los animales
 				cantidadNecesaria=kilosComprados/(double)numA; //Calculamos cuantos kilos corresponde a cada animal
+				System.out.println("No tienes suficiente comida para los animales"); //Mostramos que no es suficiente comida para los animales
 				System.out.printf("A cada animal le corresponderia %.2fkg de comida",cantidadNecesaria); //Lo mostramos
 			}
 		}
