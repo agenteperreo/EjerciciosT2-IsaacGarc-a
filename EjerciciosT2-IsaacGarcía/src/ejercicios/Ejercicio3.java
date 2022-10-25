@@ -8,7 +8,7 @@ public class Ejercicio3 {
 
 		// Declaramos las variables
 		int numA;
-		double kilosComprados, kilosDiarios, cantidadNecesaria, cantidadS;
+		double kilosComprados, kilosDiarios, cantidadNecesaria;
 
 		// Abrimos el escaner
 		Scanner sc = new Scanner(System.in);
@@ -22,28 +22,18 @@ public class Ejercicio3 {
 		numA = sc.nextInt();
 
 		// Pedimos la media de kilos de comida diaria por animal
-		System.out.print("Cuantos kilos diarios consume cada animal: ");
+		System.out.print("Cuantos kilos diarios consumen los animales: ");
 		kilosDiarios = sc.nextDouble();
 
-		// Si el numero de animales es 0 o menor no es valido
-		if (numA <= 0) {
-			System.out.println("La cantidad de animales es invalida");
-		} else { // Si el numero de animales es mayor que 0 calculamos la cantidad de comida que
-					// necesitan los animales
-			cantidadNecesaria = numA * kilosDiarios;// Calculo de la cantidad de comida
-			if (cantidadNecesaria > kilosComprados) { // Si la cantidad de comida necesaria es mayor que la caomprada
-														// entonces la comida es insuficiente
-				cantidadNecesaria = kilosComprados / numA; // Calculamos la cantidad de comida proporcional a cada
-															// animal
-				System.out.println("La cantidad comprada es insuficiente"); // Mostramos por terminal que no hay
-																			// suficiente comida
-				System.out.printf("Para que todos los animales coman lo mismo cada animal, comerían %.2fkg",
-						cantidadNecesaria); // Mostramos la cantidad que corresponderia a cada animal
-			} else { //Si la comida es sufiente
-				cantidadNecesaria = kilosDiarios * numA; //Calculamos cuanta comida necesitaran los animales
-				cantidadS = kilosComprados - cantidadNecesaria; //Calculamos cuantos kg de comida sobran
-				System.out.printf("Todos los animales podrian comer su ración, e incluso sobrarian %.2fkg", cantidadS);
-				//Mostramos que hay suficiente comida y cuanta comida sobra
+		if (numA<=0) { //Si el numero de animales es menor o igual que 0, no se podria seguir el programa
+			System.out.println("El numero de animales es incorrecto"); //Mostramos que es incorrecto
+		} else { //Si no continuamos
+			if (kilosComprados>=kilosDiarios) { //Si los kg de comida comprados es mayor o igual a los kilos que consumen los animales
+				System.out.println("Tienes suficiente comida para los animales"); //Mostramos que tienen suficiente comida
+			} else { //Si el numero de kilos comprados es menor al de los kilos que consumen los animales
+				System.out.println("No tienes suficiente comida para los animales"); //Mostramos que no es suficiente comida para los animales
+				cantidadNecesaria=kilosComprados/(double)numA; //Calculamos cuantos kilos corresponde a cada animal
+				System.out.printf("A cada animal le corresponderia %.2fkg de comida",cantidadNecesaria); //Lo mostramos
 			}
 		}
 
