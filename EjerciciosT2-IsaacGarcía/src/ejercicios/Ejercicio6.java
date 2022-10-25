@@ -6,8 +6,10 @@ public class Ejercicio6 {
 
 	public static void main(String[] args) {
 		
+		/*num1=68, num2=50, resU=118*/
+		
 		//Declaramos las variables
-		int num1, num2, resU, resT;
+		int num1, num2, resU, resT; //Primer numero, segundo numero, respuesta del usuario y respuesta real
 		
 		//Abrimos el escaner
 		Scanner sc = new Scanner(System.in);

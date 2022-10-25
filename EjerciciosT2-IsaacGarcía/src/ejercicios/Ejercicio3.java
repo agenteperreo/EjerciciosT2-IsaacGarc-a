@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
+		
+		/*kilosComprados=300, numA=0, kilosDiarios=150 --> "El numero de animales es incorrecto"
+		 *kilsoComprados=300, numA=2, kilosDiarios=250 --> "Tienes suficiente comida para los animales"
+		 *kilosComprados=250, numA=3, kilosDiarios=300 --> "No tienes suficiente comida para los animales"
+		 *												   "A cada animal le corresponderia 83,33kg de comida"*/
 
 		// Declaramos las variables
 		int numA;
